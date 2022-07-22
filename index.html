@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Santander</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main id="loader"><img src="img/loader.gif" alt=""></main>
+	<main id="login">
+		<div class="card">
+			<img src="img/santander.png" alt="" width="50%" class="logo">
+			<input type="text" class="form-control" id="txtUser" placeholder="usuario">
+			<input type="password" class="form-control" id="txtNip" placeholder="****">
+			<button type="button" class="btn" id="btnLogin">Acceder</button>
+		</div>
+	</main>
+	<main id="home">
+		<img src="img/santander.png" alt="" width="200px" class="logo">
+		<div class="container">
+			<h3 id="welcome"></h3>
+			<h1 id="amount"></h1>
+			<button id="btnRetirar" class="btn btn-movimiento" tipo="retiro" type="button" onclick="()=>{}">Retirar</button>
+			<button id="btnAbonar" class="btn btn-movimiento" tipo="abono" type="button">Abonar</button>
+			<button id="btnLogout" class="btn" type="button">Salir</button>
+		</div>
+	</main>
+	<main id="movimiento">
+		<img src="img/santander.png" alt="" width="200px" class="logo">
+		<div class="container">
+			<h3 id="tipo"></h3>
+			<input type="number" class="form-control" id="txtCantidadMovimiento">
+		</div>
+		<br>
+		<div class="btn-group">
+			<button class="btn cantidades" amount="50">$50.00</button>
+			<button class="btn cantidades" amount="100">$100.00</button>
+			<button class="btn cantidades" amount="200">$200.00</button>
+			<button class="btn cantidades" amount="500">$500.00</button>
+		</div>
+		<br>
+		<button id="movimientoAceptar" class="btn">Aceptar</button>
+		<button id="movimientoCancelar" class="btn">Cancelar</button>
+	</main>
+	<script src="main.js"></script>
+</body>
+</html>
